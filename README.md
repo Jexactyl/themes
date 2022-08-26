@@ -8,3 +8,6 @@ Refer to the folders in this repository to browse the different themes available
 
 ### Light Theme (Paperback)
 ![light](https://raw.githubusercontent.com/Jexactyl/themes/main/light/screenshots/store.png)
+
+### Purple Theme (Deep Ocean)
+![purple](https://raw.githubusercontent.com/Jexactyl/themes/main/purple/screenshots/store.png)

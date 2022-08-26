@@ -1,5 +1,5 @@
-# Paperback (Light) Theme
-This theme is designed to introduce a light and vibrant look to your Panel.
+# Deep Ocean (Purple) Theme
+This theme is designed to introduce a dark and ocean-like look to your Panel.
 It's easy to install and setup, with just 4 steps required.
 
 ## 1) Install build dependencies
@@ -23,25 +23,10 @@ file already exists in this directory, overwrite it.
 ```bash
 cd /var/www/jexactyl
 rm tailwind.config.js # Delete old TailwindCSS configuration
-curl -Lo tailwind.config.js https://raw.githubusercontent.com/Jexactyl/themes/main/light/tailwind.config.js # Download the new config for this theme
+curl -Lo tailwind.config.js https://raw.githubusercontent.com/Jexactyl/themes/main/purple/tailwind.config.js # Download the new config for this theme
 ```
 
-## 3) Add extra theme files needed
-This theme requires you to replace files `GlobalStylesheet.ts` and `TitledGreyBox.tsx`, so everything
-looks correct once installed.
-Doing this is straightforward and can be done with the following commands:
-```bash
-cd /var/www/jexactyl/resources/assets/css
-rm GlobalStylesheet.ts
-curl -Lo GlobalStylesheet.ts https://raw.githubusercontent.com/Jexactyl/themes/main/light/resources/assets/css/GlobalStylesheet.ts
-
-cd /var/www/jexactyl/resources/scripts/components/elements
-rm TitledGreyBox.tsx
-curl -Lo TitledGreyBox.tsx https://raw.githubusercontent.com/Jexactyl/themes/main/light/resources/scripts/components/elements/TitledGreyBox.tsx
-```
-After you've gone ahead and added this file, you can move onto stage 4.
-
-## 4) Build Jexactyl with theme installed
+## 3) Build Jexactyl with theme installed
 Once you've downloaded the new configuration file, you can rebuild the Panel.
 ```bash
 cd /var/www/jexactyl
