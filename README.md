@@ -11,3 +11,6 @@ Refer to the folders in this repository to browse the different themes available
 
 ### Purple Theme (Deep Ocean)
 ![purple](https://raw.githubusercontent.com/Jexactyl/themes/main/purple/screenshots/store.png)
+
+### Gray Theme (Discord:tm:)
+![gray](https://raw.githubusercontent.com/Jexactyl/themes/main/gray/screenshots/store.png)
