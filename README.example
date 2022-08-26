@@ -1,0 +1,51 @@
+# {{ THEME_NAME }} - {{ THEME_DESCRIPTION }}
+This theme is designed to introduce a {{ THEME_IMPRESSION }} look to your Panel.
+It's easy to install and setup, with just 3 steps required.
+
+## 1) Install build dependencies
+You need to install the packages and tools required to build Jexactyl's frontend.
+You can do this with the commands below:
+```bash
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+apt install -y nodejs
+npm i -g yarn
+```
+Then, navigate to the `/var/www/jexactyl/directory` and install the Yarn packages.
+```bash
+cd /var/www/jexactyl/
+yarn
+```
+
+## 2) Add new Tailwind file
+In this folder you'll find a file named `tailwind.config.js`. This file needs to be present
+in your `/var/www/jexactyl` directory in order for the theme to be added. Even if a tailwind config
+file already exists in this directory, overwrite it.
+```bash
+cd /var/www/jexactyl
+rm tailwind.config.js # Delete old TailwindCSS configuration
+curl -Lo tailwind.config.js https://raw.githubusercontent.com/Jexactyl/themes/main/{{ FOLDER_NAME }}/tailwind.config.js # Download the new config for this theme
+```
+
+## 3) Build Jexactyl with theme installed
+Once you've downloaded the new configuration file, you can rebuild the Panel.
+```bash
+cd /var/www/jexactyl
+yarn build:production
+```
+This operation may take some time depending on your machines specifications.
+Please make sure you meet the [requirements](https://docs.jexactyl.com/#/latest/build/install) for building Jexactyl.
+
+## Install complete!
+Assuming you've followed all the previous steps correctly, your Panel should now have the Lights Out theme installed. Here's some screenshots of what the Panel will look like with this theme.
+
+## Screenshots
+### Server List
+[![ServerList](https://raw.githubusercontent.com/Jexactyl/themes/main/{{ FOLDER_NAME }}/screenshots/home.png)](https://raw.githubusercontent.com/Jexactyl/themes/main/{{ FOLDER_NAME }}/screenshots/home.png)
+### Account
+[![Account](https://raw.githubusercontent.com/Jexactyl/themes/main/{{ FOLDER_NAME }}/screenshots/account.png)](https://raw.githubusercontent.com/Jexactyl/themes/main/{{ FOLDER_NAME }}/screenshots/account.png)
+### Store
+[![Store](https://raw.githubusercontent.com/Jexactyl/themes/main/{{ FOLDER_NAME }}/screenshots/store.png)](https://raw.githubusercontent.com/Jexactyl/themes/main/{{ FOLDER_NAME }}/screenshots/store.png)
+### Console
+[![Console](https://raw.githubusercontent.com/Jexactyl/themes/main/{{ FOLDER_NAME }}/screenshots/console.png)](https://raw.githubusercontent.com/Jexactyl/themes/main/{{ FOLDER_NAME }}/screenshots/console.png)
+### Files
+[![Files](https://raw.githubusercontent.com/Jexactyl/themes/main/{{ FOLDER_NAME }}/screenshots/files.png)](https://raw.githubusercontent.com/Jexactyl/themes/main/{{ FOLDER_NAME }}/screenshots/files.png)
